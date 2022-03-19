@@ -1,0 +1,19 @@
+@font-face {
+  font-family: Kanit-Regular;
+  src: url("../../../public/fonts/Kanit-Regular.ttf");
+}
+
+div {
+  font-family: Kanit-Regular;
+  font-size: 20px;
+}
+
+img {
+  height: 70px;
+  width: 70px;
+}
+/* div {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 50px;
+} */
