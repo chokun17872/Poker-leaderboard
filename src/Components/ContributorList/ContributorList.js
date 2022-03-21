@@ -11,9 +11,22 @@ const contributorList = [info, info, info, info, info, info, info];
 
 class ContributorList extends Component {
   render() {
-    return contributorList.map((contributor) => {
+    const contributorListBody = contributorList.map((contributor) => {
       return <Contributor info={contributor} />;
     });
+    return (
+      <table class="table">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Profile</th>
+            <th>Name</th>
+            <th>Points</th>
+          </tr>
+        </thead>
+        <tbody>{contributorListBody}</tbody>
+      </table>
+    );
   }
 }
 
