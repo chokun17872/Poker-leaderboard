@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import Contributor from "../Contributor/Contributor.js";
-// import "./ContributorList.css";
 
 const info = {
   rank: 1,
