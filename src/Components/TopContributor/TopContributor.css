@@ -1,0 +1,14 @@
+.TopContributor {
+  margin: 0 auto;
+  text-align: center;
+  font-size: 25px;
+}
+
+.TopContributor .rank {
+  margin-top: 1rem;
+}
+
+.TopContributor .profile {
+  width: 120px;
+  height: 120px;
+}
