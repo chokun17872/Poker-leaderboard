@@ -20,10 +20,10 @@ class ContributorList extends Component {
         <table class="table table-light align-middle">
           <thead class="table-dark">
             <tr>
-              <th>#</th>
-              <th>Profile</th>
-              <th>Name</th>
-              <th>Points</th>
+              <th class="col-1">#</th>
+              <th class="col-1">Profile</th>
+              <th class="col-8">Name</th>
+              <th class="col-2">Points</th>
             </tr>
           </thead>
           <tbody>{contributorListBody}</tbody>
