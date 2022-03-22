@@ -1,10 +1,4 @@
-@font-face {
-  font-family: Kanit-Regular;
-  src: url("../../../public/fonts/Kanit-Regular.ttf");
-}
-
 .Contributor {
-  font-family: Kanit-Regular;
   font-size: 20px;
 }
 
