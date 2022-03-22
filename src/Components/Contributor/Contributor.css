@@ -3,12 +3,12 @@
   src: url("../../../public/fonts/Kanit-Regular.ttf");
 }
 
-div {
+.Contributor {
   font-family: Kanit-Regular;
   font-size: 20px;
 }
 
-img {
+.Contributor .profile {
   height: 70px;
   width: 70px;
 }
