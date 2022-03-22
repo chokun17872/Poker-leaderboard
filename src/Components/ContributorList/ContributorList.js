@@ -17,7 +17,7 @@ class ContributorList extends Component {
     });
     return (
       <div class="table-responsive">
-        <table class="table table-light">
+        <table class="table table-light align-middle">
           <thead class="table-dark">
             <tr>
               <th>#</th>
