@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Contributor from "../Contributor/Contributor.js";
+// import "./ContributorList.css";
 
 const info = {
   rank: 1,
@@ -15,17 +16,19 @@ class ContributorList extends Component {
       return <Contributor info={contributor} />;
     });
     return (
-      <table class="table">
-        <thead>
-          <tr>
-            <th>#</th>
-            <th>Profile</th>
-            <th>Name</th>
-            <th>Points</th>
-          </tr>
-        </thead>
-        <tbody>{contributorListBody}</tbody>
-      </table>
+      <div class="table">
+        <table class="table table-light">
+          <thead class="table-dark">
+            <tr>
+              <th>#</th>
+              <th>Profile</th>
+              <th>Name</th>
+              <th>Points</th>
+            </tr>
+          </thead>
+          <tbody>{contributorListBody}</tbody>
+        </table>
+      </div>
     );
   }
 }
