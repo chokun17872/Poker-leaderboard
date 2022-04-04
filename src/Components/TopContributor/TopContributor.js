@@ -18,7 +18,6 @@ class TopContributor extends Component {
           src={profileImg}
           alt={info.name}
         />
-        {/* <p className="rank"># {info.rank}</p> */}
         <p className="name">{info.name}</p>
         <p className="point">{info.point} points</p>
       </div>
