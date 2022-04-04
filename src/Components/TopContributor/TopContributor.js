@@ -12,12 +12,13 @@ class TopContributor extends Component {
   render() {
     return (
       <div className={"TopContributor " + this.props.place}>
+        <p className="rank"># {info.rank}</p>
         <img
           className="profile rounded-circle"
           src={profileImg}
           alt={info.name}
         />
-        <p className="rank"># {info.rank}</p>
+        {/* <p className="rank"># {info.rank}</p> */}
         <p className="name">{info.name}</p>
         <p className="point">{info.point} points</p>
       </div>
