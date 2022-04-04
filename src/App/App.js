@@ -1,13 +1,11 @@
 import React, { Component } from "react";
-import ContributorList from "../Components/ContributorList/ContributorList";
-import TopContributorList from "../Components/TopContributorList/TopContributorList";
+import Leaderboard from "../Components/Leaderboard/Leaderboard";
 
 class App extends Component {
   render() {
     return (
       <div>
-        <TopContributorList />
-        <ContributorList />
+        <Leaderboard />
       </div>
     );
   }
