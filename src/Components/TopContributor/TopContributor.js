@@ -1,25 +1,18 @@
 import React, { Component } from "react";
-import profileImg from "../Contributor/profile_img.jpg";
 import "./TopContributor.css";
-
-const info = {
-  rank: 1,
-  name: "Chavalvit Keartnattakorn ชวัลวิทย์ เกียรติณัฐกร",
-  point: 1000,
-};
 
 class TopContributor extends Component {
   render() {
     return (
       <div className={"TopContributor " + this.props.place}>
-        <p className="rank"># {info.rank}</p>
+        <p className="rank"># {this.props.info.rank}</p>
         <img
           className="profile rounded-circle"
-          src={profileImg}
-          alt={info.name}
+          src={this.props.info.image}
+          alt={this.props.info.name}
         />
-        <p className="name">{info.name}</p>
-        <p className="point">{info.point} points</p>
+        <p className="name">{this.props.info.name}</p>
+        <p className="point">{this.props.info.point} points</p>
       </div>
     );
   }

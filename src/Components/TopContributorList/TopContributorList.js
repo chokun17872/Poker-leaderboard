@@ -8,13 +8,13 @@ class TopContributorList extends Component {
       <div className="container">
         <div className="row">
           <div className="col">
-            <TopContributor place="second" />
+            <TopContributor info={this.props.contributor[1]} place="second" />
           </div>
           <div className="col">
-            <TopContributor place="first" />
+            <TopContributor info={this.props.contributor[0]} place="first" />
           </div>
           <div className="col">
-            <TopContributor place="third" />
+            <TopContributor info={this.props.contributor[2]} place="third" />
           </div>
         </div>
       </div>

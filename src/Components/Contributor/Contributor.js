@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import profileImg from "./profile_img.jpg";
 import "./Contributor.css";
 
 class Contributor extends Component {
@@ -12,7 +11,7 @@ class Contributor extends Component {
         <td>
           <img
             className="profile"
-            src={profileImg}
+            src={this.props.info.image}
             alt={this.props.info.name}
           />
         </td>
