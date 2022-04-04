@@ -11,7 +11,7 @@ const info = {
 class TopContributor extends Component {
   render() {
     return (
-      <div className="TopContributor">
+      <div className={"TopContributor " + this.props.place}>
         <img
           className="profile rounded-circle"
           src={profileImg}

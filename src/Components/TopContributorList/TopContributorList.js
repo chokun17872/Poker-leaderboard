@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import TopContributor from "../TopContributor/TopContributor";
+import "./TopContributorList.css";
 
 class TopContributorList extends Component {
   render() {
@@ -7,13 +8,13 @@ class TopContributorList extends Component {
       <div className="container">
         <div className="row">
           <div className="col">
-            <TopContributor />
+            <TopContributor place="second" />
           </div>
           <div className="col">
-            <TopContributor />
+            <TopContributor place="first" />
           </div>
           <div className="col">
-            <TopContributor />
+            <TopContributor place="third" />
           </div>
         </div>
       </div>
