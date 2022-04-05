@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import "./LeaderboardTitle.css";
 
 class LeaderboardTitle extends Component {
   render() {
