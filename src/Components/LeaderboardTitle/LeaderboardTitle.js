@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 
-class LeaderboardName extends Component {
+class LeaderboardTitle extends Component {
   render() {
     return (
-      <div className="LeaderboardName">
+      <div className="LeaderboardTitle">
         <p className="title">Contributor Ranking</p>
         <p className="facebookGroup">Poker Thailand</p>
       </div>
@@ -11,4 +11,4 @@ class LeaderboardName extends Component {
   }
 }
 
-export default LeaderboardName;
+export default LeaderboardTitle;
