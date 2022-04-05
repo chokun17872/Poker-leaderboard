@@ -3,6 +3,11 @@
   text-align: center;
 }
 
-.facebookGroup {
+.facebookGroup .groupName {
   margin-top: -0.75rem;
+}
+
+.facebookGroup .logo {
+  width: 20px;
+  height: 20px;
 }
