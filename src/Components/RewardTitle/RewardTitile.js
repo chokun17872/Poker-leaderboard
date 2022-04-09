@@ -1,4 +1,6 @@
 import React, { Component } from "react";
+import "./RewardTitle.css";
+
 class RewardTitle extends Component {
   render() {
     return (
