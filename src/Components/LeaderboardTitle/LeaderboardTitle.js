@@ -12,6 +12,8 @@ class LeaderboardTitle extends Component {
           <a
             className="groupLink"
             href="https://www.facebook.com/groups/223422232142743/"
+            target="_blank"
+            rel="noreferrer"
           >
             <img className="logo" src={fbLogo} alt="fbLogo"></img>
           </a>
