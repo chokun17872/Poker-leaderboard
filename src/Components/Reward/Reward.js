@@ -3,7 +3,16 @@ import "./Reward.css";
 
 class Reward extends Component {
   render() {
-    return <p>ของรางวัล</p>;
+    return (
+      <button
+        type="button"
+        className="reward btn btn-dark"
+        data-toggle="modal"
+        data-target="#reward"
+      >
+        ของรางวัล
+      </button>
+    );
   }
 }
 
