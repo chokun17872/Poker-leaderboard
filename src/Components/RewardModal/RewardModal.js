@@ -1,32 +1,43 @@
-import React, { useState } from "react";
+import React, { Component } from "react";
 import { Modal, Button } from "react-bootstrap";
-import Reward from "../Reward/Reward";
 
-function RewardModal() {
-  const [show, setShow] = useState(false);
+class RewardModal extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      show: false,
+    };
+  }
 
-  const handleClose = () => setShow(false);
-  const handleShow = () => setShow(true);
+  handleClose = () => {
+    this.setState({ show: false });
+  };
 
-  return (
-    <>
-      <Button variant="primary" onClick={handleShow}>
-        ของรางวัล
-      </Button>
+  handleShow = () => {
+    this.setState({ show: true });
+  };
 
-      <Modal show={show} onHide={handleClose}>
-        <Modal.Header closeButton>
-          <Modal.Title></Modal.Title>
-        </Modal.Header>
-        <Modal.Body>{Reward}</Modal.Body>
-        <Modal.Footer>
-          <Button variant="secondary" onClick={handleClose}>
-            Close
-          </Button>
-        </Modal.Footer>
-      </Modal>
-    </>
-  );
+  render() {
+    return (
+      <div className="RewardModal">
+        <Button variant="primary" onClick={this.handleShow}>
+          ของรางวัล
+        </Button>
+
+        <Modal show={this.state.show} onHide={this.handleClose}>
+          <Modal.Header closeButton>
+            <Modal.Title></Modal.Title>
+          </Modal.Header>
+          <Modal.Body></Modal.Body>
+          <Modal.Footer>
+            <Button variant="secondary" onClick={this.handleClose}>
+              Close
+            </Button>
+          </Modal.Footer>
+        </Modal>
+      </div>
+    );
+  }
 }
 
 export default RewardModal;
