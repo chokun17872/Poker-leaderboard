@@ -2,15 +2,27 @@ import React, { Component } from "react";
 import Reward from "../Reward/Reward";
 import rewardImg from "./reward.png";
 
+const rewardList = [];
+
+for (let i = 1; i <= 3; i++) {
+  const rewardInfo = {
+    img: rewardImg,
+    desc: `ของรางวัล ${i}`,
+  };
+  rewardList.push(rewardInfo);
+}
+
 class RewardList extends Component {
   render() {
-    return (
-      <div>
-        <Reward rewardImg={rewardImg} rewardDesc="ของรางวัล 1" />
-        <Reward rewardImg={rewardImg} rewardDesc="ของรางวัล 2" />
-        <Reward rewardImg={rewardImg} rewardDesc="ของรางวัล 3" />
-      </div>
-    );
+    return rewardList.map((reward) => {
+      return (
+        <Reward
+          key={reward.desc}
+          rewardImg={reward.img}
+          rewardDesc={reward.desc}
+        />
+      );
+    });
   }
 }
 
