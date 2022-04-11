@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import { Modal, Button } from "react-bootstrap";
+import RewardTitle from "../RewardTitle/RewardTitle";
+import RewardList from "../RewardList/RewardList";
 
 class RewardModal extends Component {
   constructor(props) {
@@ -26,9 +28,13 @@ class RewardModal extends Component {
 
         <Modal show={this.state.show} onHide={this.handleClose}>
           <Modal.Header closeButton>
-            <Modal.Title>{this.props.title}</Modal.Title>
+            <Modal.Title>
+              <RewardTitle />
+            </Modal.Title>
           </Modal.Header>
-          <Modal.Body>{this.props.content}</Modal.Body>
+          <Modal.Body>
+            <RewardList />
+          </Modal.Body>
           <Modal.Footer>
             <Button variant="secondary" onClick={this.handleClose}>
               Close
