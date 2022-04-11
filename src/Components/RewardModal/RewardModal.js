@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Modal, Button } from "react-bootstrap";
-import RewardInfo from "../RewardInfo/RewardInfo";
+import Reward from "../Reward/Reward";
 
 function RewardModal() {
   const [show, setShow] = useState(false);
@@ -18,7 +18,7 @@ function RewardModal() {
         <Modal.Header closeButton>
           <Modal.Title></Modal.Title>
         </Modal.Header>
-        <Modal.Body>{RewardInfo}</Modal.Body>
+        <Modal.Body>{Reward}</Modal.Body>
         <Modal.Footer>
           <Button variant="secondary" onClick={handleClose}>
             Close

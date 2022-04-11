@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import rewardImg from "./reward.png";
 
-class RewardInfo extends Component {
+class Reward extends Component {
   render() {
     return (
       <div>
@@ -12,4 +12,4 @@ class RewardInfo extends Component {
   }
 }
 
-export default RewardInfo;
+export default Reward;
