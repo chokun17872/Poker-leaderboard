@@ -4,9 +4,9 @@ import "./RewardTitle.css";
 class RewardTitle extends Component {
   render() {
     return (
-      <div>
-        <p>ของรางวัล</p>
-        <p>วันที่ 31 กุมภาพันธ์ 2077</p>
+      <div className="RewardTitle">
+        <p className="title">ของรางวัล</p>
+        <p className="date">วันที่ 31 กุมภาพันธ์ 2077</p>
       </div>
     );
   }
